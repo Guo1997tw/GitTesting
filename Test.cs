@@ -22,6 +22,9 @@ namespace HelloWorldApp
 			// 呼叫 Fun4 函式
             bool isEven = Fun4(4);
             Console.WriteLine($"Fun4: Is 4 an even number? -> {isEven}");
+			
+			// 呼叫 HotFixFunction 函式
+            HotFixFunction();
         }
 		
 		// 函式 1: 顯示歡迎訊息
@@ -46,6 +49,12 @@ namespace HelloWorldApp
         static bool Fun4(int number)
         {
             return number % 2 == 0;
+        }
+		
+		// 函式 5: 模擬修復錯誤的 HotFixFunction
+        static void HotFixFunction()
+        {
+            Console.WriteLine("HotFixFunction: This is a simulated hotfix function to demonstrate patching!");
         }
     }
 }
