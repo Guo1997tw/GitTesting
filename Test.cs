@@ -18,6 +18,10 @@ namespace HelloWorldApp
 			// 呼叫 Fun3 函式
             string upperCaseName = Fun3("hello");
             Console.WriteLine($"Fun3: Convert 'hello' to uppercase -> {upperCaseName}");
+			
+			// 呼叫 Fun4 函式
+            bool isEven = Fun4(4);
+            Console.WriteLine($"Fun4: Is 4 an even number? -> {isEven}");
         }
 		
 		// 函式 1: 顯示歡迎訊息
@@ -36,6 +40,12 @@ namespace HelloWorldApp
         static string Fun3(string input)
         {
             return input.ToUpper();
+        }
+		
+		// 函式 4: 判斷是否為偶數
+        static bool Fun4(int number)
+        {
+            return number % 2 == 0;
         }
     }
 }
